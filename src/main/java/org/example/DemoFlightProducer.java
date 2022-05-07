@@ -140,7 +140,7 @@ public class DemoFlightProducer implements FlightProducer {
   }
 
   private String resourceNameToURIString(String resourceName) throws Exception {
-    final URL resourceUri = this.getClass().getResource(resourceName);
+    final URL resourceUri = this.getClass().getResource("/" + resourceName);
     return resourceUri.toURI().toString();
   }
 
